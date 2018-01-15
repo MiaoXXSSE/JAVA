@@ -32,3 +32,18 @@
     long projectId;
 }
 </pre>
+
+## 内嵌式主键 ##
+
+<pre>
+@Entity
+public class Project {
+    @EmbeddedId ProjectId id;
+}
+
+@Embeddable
+Class ProjectId {
+    int departmentId;
+    long projectId;
+}
+</pre>
