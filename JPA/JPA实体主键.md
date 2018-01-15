@@ -20,7 +20,6 @@
 
 有多个主键字段时
 
-<code>
   @Entity  @IdClass(ProjectId.class)
   public class Project {
     @Id int departmentId;
@@ -31,6 +30,3 @@
     int departmentId;
     long projectId;
 }
-  
-</code>
-
